@@ -1,0 +1,56 @@
+/* Student feedback tab and dialog. Self-contained so it looks the same on course, story, lab and video pages. */
+.pfb-tab{position:fixed;right:0;top:50%;z-index:900;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl;min-height:0;margin:0;padding:16px 10px;border:0;border-radius:0 10px 10px 0;background:#C8323D;color:#fff;font:600 14px/1 Poppins,system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.4px;box-shadow:0 4px 14px rgba(59,70,90,.25);cursor:pointer}
+.pfb-tab:hover{filter:brightness(.92)}
+.pfb-tab:focus-visible{outline:3px solid #f6b3b5;outline-offset:2px}
+.pfb-tab.pfb-has-reply::after{content:"";position:absolute;top:6px;left:6px;width:10px;height:10px;border:2px solid #fff;border-radius:50%;background:#f5b400}
+html.pfb-open{overflow:hidden}
+.pfb-dialog{width:min(620px,calc(100vw - 32px));max-height:calc(100dvh - 32px);margin:auto;padding:0;border:0;border-top:5px solid #C8323D;border-radius:14px;background:#fff;color:#303a4c;font:15px/1.5 Poppins,system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 20px 50px rgba(30,38,52,.35);overflow:auto}
+.pfb-dialog::backdrop{background:rgba(30,38,52,.55)}
+.pfb-head{display:flex;gap:16px;justify-content:space-between;align-items:flex-start;padding:22px 24px 12px}
+.pfb-eyebrow{margin:0 0 4px;color:#C8323D;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.pfb-head h2{margin:0;color:#303a4c;font-size:22px;line-height:1.25}
+.pfb-intro{margin:8px 0 0;color:#657087;font-size:14px}
+.pfb-close{flex:0 0 auto;width:38px;height:38px;padding:0;border:0;border-radius:50%;background:#eef1f5;color:#303a4c;font-size:22px;line-height:1;cursor:pointer}
+.pfb-switch{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:0 24px 14px;border-bottom:1px solid #dfe3e9}
+.pfb-switch button{padding:7px 14px;border:1px solid #cad4e2;border-radius:999px;background:#fff;color:#3b465a;font-family:inherit;font-weight:600;font-size:13px;line-height:1.2;cursor:pointer}
+.pfb-switch button[aria-pressed=true]{border-color:#C8323D;background:#C8323D;color:#fff}
+.pfb-inbox{margin-left:auto;color:#C8323D;font-size:13px;font-weight:600}
+.pfb-body{padding:18px 24px 24px}
+.pfb-about{display:grid;gap:3px;margin-bottom:16px;padding:12px 14px;border-left:4px solid #195d9b;border-radius:7px;background:#edf4fb;font-size:14px}
+.pfb-about strong{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#195d9b}
+.pfb-about small{color:#657087;font-size:12px}
+.pfb-form label{display:block;margin:0 0 6px;font-size:14px;font-weight:700}
+.pfb-form textarea{display:block;width:100%;box-sizing:border-box;min-height:140px;padding:11px 12px;border:1px solid #aeb9c8;border-radius:7px;background:#fff;color:#303a4c;font-family:inherit;font-size:16px;line-height:1.5;resize:vertical}
+.pfb-form textarea:focus{outline:3px solid #f6b3b5;outline-offset:1px;border-color:#e4464f}
+.pfb-meta{display:flex;justify-content:flex-end;margin-top:4px;color:#657087;font-size:12px}
+.pfb-error{margin:10px 0 0;padding:10px 12px;border-left:4px solid #bc7a12;border-radius:6px;background:#fff7e7;color:#6f4708;font-size:14px}
+.pfb-error[hidden]{display:none}
+.pfb-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.pfb-send,.pfb-secondary{padding:10px 18px;border-radius:8px;font-family:inherit;font-weight:600;font-size:14px;line-height:1.2;cursor:pointer}
+.pfb-send{border:0;background:#C8323D;color:#fff}
+.pfb-send:disabled{opacity:.6;cursor:default}
+.pfb-secondary{border:1px solid #cad4e2;background:#fff;color:#3b465a}
+.pfb-thanks-title{margin:0 0 6px;font-size:20px;font-weight:700;color:#17644d}
+.pfb-muted{color:#657087}
+.pfb-list{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.pfb-report{padding:13px 15px;border:1px solid #dfe3e9;border-radius:9px;background:#fff}
+.pfb-unread{border-color:#f5b400;box-shadow:0 0 0 2px #fff1c2}
+.pfb-report-head{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:12px;color:#657087}
+.pfb-status{padding:3px 9px;border-radius:999px;font-weight:700;font-size:12px;background:#eef1f5;color:#3b465a}
+.pfb-status-received{background:#edf4fb;color:#195d9b}
+.pfb-status-checking{background:#fff7e7;color:#985609}
+.pfb-status-fixed{background:#e6f4ee;color:#17644d}
+.pfb-status-not-a-problem{background:#eef1f5;color:#3b465a}
+.pfb-report-about{margin:8px 0 4px;color:#657087;font-size:12px}
+.pfb-report-text{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.pfb-reply{margin-top:10px;padding:10px 12px;border-left:4px solid #17644d;border-radius:6px;background:#eaf7f1}
+.pfb-reply strong{display:block;font-size:12px;color:#17644d}
+.pfb-reply p{margin:3px 0 0;white-space:pre-wrap}
+@media(max-width:560px){
+  .pfb-tab{padding:12px 8px;font-size:12px}
+  .pfb-head{padding:18px 16px 10px}
+  .pfb-head h2{font-size:19px}
+  .pfb-switch,.pfb-body{padding-left:16px;padding-right:16px}
+  .pfb-inbox{margin-left:0;width:100%}
+  .pfb-actions button{flex:1 1 auto}
+}

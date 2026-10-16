@@ -1,0 +1,7 @@
+.practice-source{position:relative;max-width:100%;width:fit-content;margin:auto}
+.practice-source>a{display:block}
+.practice-source img.original-crop{display:block;width:100%;margin:0;border:0;padding:0}
+.practice-boundary{position:absolute;border:3px solid #ce1423;box-sizing:border-box;pointer-events:none}
+.practice-boundary[hidden]{display:none}
+.practice-focus-notice{border-left:4px solid #ce1423;padding:12px 16px;background:#fff4f4;color:#72202a}
+@media print{.practice-boundary{border-color:#ce1423!important;print-color-adjust:exact}}

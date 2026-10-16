@@ -1,0 +1,49 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:22.016
+A probability is the chance that something happens. A Punnett square is a grid that pairs each gamete, or sex cell, of one parent with each gamete of the other. It has four boxes, and each box is one possible child. So probability is the number of boxes with that outcome, out of four. Here, one box in four has the condition.
+
+00:00:22.600 --> 00:00:36.488
+You can write it four ways: one in four, a quarter, nought point two five, or twenty-five per cent. Do not write a ratio like one to three. And every child has a half chance of being a boy, and a half chance of being a girl.
+
+00:00:37.600 --> 00:00:53.536
+Step one. Sometimes two things must both happen: a boy, and with the condition. Then multiply. For a condition that is not sex-linked, the chance of a boy is a half, and the chance of the condition is a quarter. A half times a quarter is one eighth.
+
+00:00:56.450 --> 00:01:10.551
+Step two. In a sex-linked cross, the sex is already in the square. The boxes with a Y are boys. So read 'a boy with haemophilia' straight from the four boxes: one in four. Do not multiply by a half again.
+
+00:01:11.150 --> 00:01:25.379
+Step three. Each child is a separate event. The chance that two children both have the condition is a quarter times a quarter: one in sixteen. Multiply, never add. Then check your answer is between nought and one.
+
+00:01:25.950 --> 00:01:38.622
+Step four. A Y-linked trait is carried on the Y. A girl has two X chromosomes and no Y, so she can never have it. The chance of a girl without the trait is just the chance of a girl: a half.
+
+00:01:39.750 --> 00:01:55.323
+Here is a real exam question. Two sets of parents have children M and N. Child M has blood group O. The second set of parents are both group B. Calculate the probability that their next child has group B. Three marks.
+
+00:01:55.900 --> 00:02:13.756
+First, the parents' genotypes. Group B can be I-B, I-B, or I-B, I-O. M must belong here: AB and O parents cannot have a group O child. M is group O, so M is I-O, I-O. M got one I-O from each parent. So both parents are I-B, I-O.
+
+00:02:14.350 --> 00:02:25.401
+Each parent makes gametes I-B or I-O. The square gives I-B, I-B, then I-B, I-O twice, then I-O, I-O. I-B, I-O is group B, because I-O is recessive.
+
+00:02:26.500 --> 00:02:38.596
+Three boxes out of four are group B. So the probability is three quarters: nought point seven five, or seventy-five per cent. Answer by olevels.com, not an official mark scheme.
+
+00:02:39.700 --> 00:02:47.785
+A common mistake is to write a ratio, like three to one. A few schemes accept it; many do not. Write three quarters instead.
+
+00:02:48.350 --> 00:02:58.739
+Another mistake is to multiply by a half for a boy in a sex-linked square. The Y boxes already show the boys. Counting the sex twice halves the answer.
+
+00:02:59.850 --> 00:03:14.741
+Your turn. A man is a carrier of cystic fibrosis. A woman has cystic fibrosis. What is the chance their next child is a girl with cystic fibrosis? And the chance that their next two children both have it? Pause here and work it out.
+
+00:03:15.850 --> 00:03:31.381
+The man is capital F, small f. The woman is small f, small f. His gametes are capital F or small f; hers are all small f. Two boxes of four are small f, small f. So the chance of cystic fibrosis is a half.
+
+00:03:32.050 --> 00:03:42.653
+A girl with cystic fibrosis: a half for a girl, times a half for the condition, is one quarter. Two children both affected: a half times a half, also one quarter.
+
+00:03:43.250 --> 00:03:52.146
+So, every time: genotypes, gametes, a Punnett square, then count the boxes out of four. Multiply when two things must both happen.

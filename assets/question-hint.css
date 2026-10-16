@@ -1,0 +1,9 @@
+.question-hint{margin:12px 0;max-width:640px;border:1px solid #d4dce7;border-radius:8px;background:#f3f6fb;color:#303a4c;font:13px/1.7 Poppins,system-ui,sans-serif;overflow-wrap:break-word}
+.question-hint>summary{cursor:pointer;padding:10px 14px;min-height:44px;color:#195d9b;font-size:12px;font-weight:600;touch-action:manipulation}
+.question-hint>summary:hover{background:#e7edf6;border-radius:7px}
+.question-hint>summary:focus-visible{outline:3px solid #e4464f;outline-offset:3px;border-radius:7px}
+.question-hint[open]>summary{border-bottom:1px solid #d4dce7}
+.question-hint>p{padding:12px 14px;margin:0;color:#303a4c;font-size:13px;line-height:1.7;white-space:normal}
+td .question-hint{min-width:220px;max-width:380px}
+#player-question-hint{margin:12px 24px;flex-shrink:0}
+@media print{.question-hint{display:none!important}}

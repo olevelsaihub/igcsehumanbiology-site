@@ -1,0 +1,45 @@
+/* Admin inbox for student feedback. */
+.fbi-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:18px 0}
+.fbi-kpi{padding:14px;border:1px solid var(--line,#dfe3e9);border-radius:10px;background:#fff}
+.fbi-kpi strong{display:block;font-size:26px;line-height:1.1;color:var(--ink,#303a4c)}
+.fbi-kpi span{font-size:11px;color:var(--muted,#657087)}
+.fbi-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin:10px 0 18px}
+.fbi-controls label{display:grid;gap:4px;font-size:11px;font-weight:700}
+.fbi-controls select,.fbi-controls input{padding:8px 10px;border:1px solid #aeb9c8;border-radius:7px;font:inherit;background:#fff}
+.fbi-search{flex:1 1 220px}
+.fbi-list{display:grid;gap:12px}
+.fbi-muted{color:var(--muted,#657087);font-size:11px}
+.fbi-report{padding:14px 16px;border:1px solid var(--line,#dfe3e9);border-left:5px solid #195d9b;border-radius:10px;background:#fff}
+.fbi-report.fbi-needs-decision{border-left-color:#985609}
+.fbi-report.fbi-fixed{border-left-color:#17644d}
+.fbi-report.fbi-not-a-problem{border-left-color:#8a94a6}
+.fbi-report-head{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.fbi-report-head time{margin-left:auto}
+.fbi-pill{padding:3px 9px;border-radius:999px;font-size:10px;font-weight:700;background:#edf4fb;color:#195d9b}
+.fbi-pill-checking{background:#fff7e7;color:#985609}
+.fbi-pill-needs-decision{background:#985609;color:#fff}
+.fbi-pill-fixed{background:#e6f4ee;color:#17644d}
+.fbi-pill-not-a-problem{background:#eef1f5;color:#3b465a}
+.fbi-about{margin:8px 0;font-size:11px;color:var(--muted,#657087)}
+.fbi-about a{color:#C8323D;font-weight:600}
+.fbi-message{margin:0;padding:10px 12px;border-radius:7px;background:#f5f6f8;white-space:pre-wrap;overflow-wrap:anywhere}
+.fbi-edit{margin-top:10px}
+.fbi-edit summary{cursor:pointer;font-size:11px;font-weight:700;color:var(--navy,#3b465a)}
+.fbi-edit-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.fbi-edit-grid select,.fbi-edit-grid input,.fbi-edit-grid textarea{width:100%;box-sizing:border-box;padding:8px 10px;border:1px solid #aeb9c8;border-radius:7px;font:inherit;background:#fff}
+.fbi-edit-actions{display:flex;gap:10px;align-items:center;margin-top:8px}
+.fbi-save{margin:0;font-size:11px;color:var(--muted,#657087)}
+.fbi-daily{margin-top:26px}
+.fbi-bar{display:grid;grid-template-columns:90px 1fr 190px;gap:10px;align-items:center;font-size:11px}
+.fbi-bar progress{width:100%;height:12px;accent-color:#C8323D}
+.fbi-table{width:100%;border-collapse:collapse;font-size:11px}
+.fbi-table th,.fbi-table td{text-align:left;vertical-align:top;padding:7px 8px;border-bottom:1px solid #e2e5ea}
+.fbi-table thead{background:#f7f8fa}
+@media(max-width:700px){.fbi-edit-grid{grid-template-columns:1fr}.fbi-bar{grid-template-columns:1fr}.fbi-report-head time{margin-left:0}}
+.fbi-level{padding:3px 9px;border-radius:999px;font-size:10px;font-weight:700;background:#eef1f5;color:#657087}
+.fbi-level-grade-9,.fbi-level-grade-8{background:#17644d;color:#fff}
+.fbi-level-grade-7{background:#e6f4ee;color:#17644d}
+.fbi-level-pass{background:#edf4fb;color:#195d9b}
+.fbi-level-below-pass{background:#f3f4f6;color:#8a94a6}
+.fbi-level-picker{display:grid;gap:2px}
+.fbi-level-picker select{padding:4px 6px;border:1px solid #aeb9c8;border-radius:6px;font:inherit;background:#fff}

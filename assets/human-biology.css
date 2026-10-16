@@ -1,0 +1,40 @@
+/* Human Biology 4HB1 additions on top of the shared course.css. */
+.stars{color:#c98a06;letter-spacing:1px;white-space:nowrap}
+.stars .off{color:#c9ced8}
+.type-meta{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:6px 0 14px;color:var(--muted);font-size:12px}
+.type-meta .tag{margin:0}
+.authored{border-left:4px solid var(--green);background:#f1f8f5;padding:12px 16px;border-radius:6px;margin:14px 0}
+.authored .authored-label{display:block;font-size:11px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.4px;margin-bottom:6px}
+.inferred{font-size:12px;color:var(--muted);font-style:italic}
+.part-index{list-style:none;padding:0}
+.part-index>li{border:1px solid var(--line);border-radius:8px;background:white;padding:10px 14px;margin:8px 0}
+.part-index>li:target{border-color:var(--coral);box-shadow:0 0 0 3px #e4464f22}
+.part-index .rejected{color:var(--muted)}
+.practice-list{columns:2;column-gap:28px;padding-left:18px}
+.practice-list li{break-inside:avoid;margin-bottom:4px}
+@media(max-width:700px){.practice-list{columns:1}}
+.type-table td,.type-table th{vertical-align:top}
+.filters{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:flex-end;margin:12px 0}
+.filters label{display:flex;flex-direction:column;font-size:12px;font-weight:600;gap:4px}
+.filters select,.filters input{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:white;max-width:280px}
+.clauses{margin:4px 0 8px;padding-left:20px}
+.clauses .level-2{margin-left:18px;list-style:circle}
+.statement{border-top:1px solid var(--line);padding:10px 0}
+.statement .code{font-weight:600;color:var(--navy)}
+.g9-model{border:1px solid var(--line);border-radius:10px;background:white;padding:12px 16px;margin:12px 0}
+.calc-check{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.plan-cumulative{color:var(--muted)}
+.honest-notes li{margin-bottom:6px}
+
+/* answer checking */
+.answer-form{margin:0}
+.answer-checker input.num-answer{display:block;width:100%;max-width:320px;box-sizing:border-box;margin-top:6px;padding:11px 12px;border:1px solid #aeb9c8;border-radius:7px;background:#fff;color:var(--ink);font:inherit}
+.answer-checker input.num-answer:focus{outline:3px solid #f6b3b5;outline-offset:1px;border-color:var(--coral)}
+.check-result:empty{display:none}
+.check-good{color:#1f7a3f;font-weight:600}.check-bad{color:#b72f3f;font-weight:600}
+.check-result ul{margin:6px 0 6px 18px}
+.grade-guide{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin:14px 0}
+.grade-guide form{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:flex-end}
+.grade-guide fieldset{border:0;padding:0;margin:0;flex-basis:100%}
+.grade-guide input[inputmode]{display:block;padding:8px 10px;border:1px solid #aeb9c8;border-radius:8px;font:inherit;width:120px}
+.grade-guide .gg-total{font-size:22px;margin:12px 0 0}

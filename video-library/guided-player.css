@@ -1,0 +1,23 @@
+.olv-guided-stage{position:relative;isolation:isolate;background:#20354a;border-radius:12px;overflow:hidden}
+.olv-guided-stage video{display:block;width:100%;border-radius:0}
+.olv-guided-checkpoint[hidden]{display:none!important}
+.olv-guided-checkpoint{position:absolute;inset:0;display:grid;place-items:center;padding:20px;background:rgba(22,40,54,.94);z-index:2}
+.olv-guided-card{width:min(100%,520px);padding:24px 28px;border-radius:18px;background:#fff;color:#20354a;text-align:center;box-shadow:0 12px 40px #0003;font:16px/1.5 system-ui}
+.olv-guided-card .olv-guided-kicker{font-size:12px;font-weight:800;letter-spacing:.1em;color:#17816c;margin:0 0 8px}
+.olv-guided-card h2{font-size:clamp(22px,3vw,30px);line-height:1.2;margin:0 0 10px;color:#20354a}
+.olv-guided-card p{margin:0 0 20px}
+.olv-guided-card button{display:block;width:100%;min-height:48px;padding:12px;border:2px solid #17816c;border-radius:10px;font:700 17px/1.35 system-ui;cursor:pointer;text-align:center}
+.olv-guided-card .olv-guided-next{background:#17816c;color:#fff;margin-bottom:10px}
+.olv-guided-card .olv-guided-repeat{background:#fff;color:#146b5a}
+.olv-guided-card button:hover{filter:brightness(.94)}
+.olv-guided-card button:focus-visible,.olv-guided-tools button:focus-visible{outline:3px solid #dd554e;outline-offset:3px}
+.olv-guided-tools{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:12px 0;flex-wrap:wrap;font:16px/1.4 system-ui}
+.olv-guided-tools button{font:600 15px/1.4 system-ui;min-height:44px;padding:10px 14px;border:1px solid #aac6be;background:white;color:#146b5a;border-radius:9px;cursor:pointer}
+.olv-guided-current{font-weight:700;color:#17816c}
+.olv-guided-navigation{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;width:100%;padding:12px;border:1px solid #c7d9d4;border-radius:12px;background:#f4f9f7;box-sizing:border-box}
+.olv-guided-navigation .olv-guided-timeline{flex:1 0 100%;width:100%;height:30px;margin:0;accent-color:#17816c;cursor:pointer}
+.olv-guided-timeline:focus-visible{outline:3px solid #dd554e;outline-offset:3px}
+.olv-guided-time{font-variant-numeric:tabular-nums;font-size:14px;color:#20354a;margin-right:auto;white-space:nowrap}
+.olv-guided-navigation button{min-width:72px}
+.olv-guided-status{min-height:1.5em;font:14px/1.5 system-ui;color:#61747f}
+@media(max-width:600px){.olv-guided-stage.is-checkpoint{min-height:365px}.olv-guided-checkpoint{padding:12px}.olv-guided-card{padding:20px}.olv-guided-card p{font-size:15px;margin-bottom:16px}.olv-guided-card button{font-size:16px}.olv-guided-current{font-size:14px}}
