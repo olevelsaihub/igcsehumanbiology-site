@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+    - /bin/chmod 755 /home/appsolevels/public_html/igcsehumanbiology
