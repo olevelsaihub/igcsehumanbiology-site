@@ -35,15 +35,20 @@
     try { rulesCache = JSON.parse(document.getElementById('olv-rules')?.textContent || '{}'); } catch { rulesCache = {}; }
     return rulesCache;
   }
-  function numbers(text) {
+  function numbers(text, fractions) {
     const out = [];
     const re = /[-\u2212\u2013]?\d{1,3}(?:[ ,\u2009\u202F\u00A0]\d{3})+(?!\d)(?:\.\d+)?|[-\u2212\u2013]?\d+(?:\.\d+)?/gu;
     for (const m of String(text).matchAll(re)) {
       const raw = m[0].replace(/[ ,\u2009\u202F\u00A0]/gu, '').replace(/[\u2212\u2013]/gu, '-');
       const n = Number(raw);
-      if (Number.isFinite(n)) out.push(n);
+      if (Number.isFinite(n)) out.push([m.index, n]);
     }
-    return out;
+    // Opt-in per rule (maths, 4PM1): "95/2" also counts as 47.5, placed after its parts so it is the last number.
+    if (fractions) for (const m of String(text).matchAll(/([-\u2212\u2013]?\d+(?:\.\d+)?)\s*\/\s*(\d+(?:\.\d+)?)/gu)) {
+      const a = Number(m[1].replace(/[\u2212\u2013]/gu, '-')), b = Number(m[2]);
+      if (b) out.push([m.index + m[0].length - 0.5, a / b]);
+    }
+    return out.sort((x, y) => x[0] - y[0]).map(x => x[1]);
   }
   const close = (x, values, tol) => values.some(v => Math.abs(x - Number(v)) <= Math.max(tol, 1e-9) + 1e-9);
   const near = (x, values) => values.some(v => Math.abs(x - Number(v)) <= Math.max(Math.abs(Number(v)) * 0.002, 0.0005) + 1e-9);
@@ -86,7 +91,7 @@
       const ans = rule.answer || {};
       let text = String(answer);
       if (ans.form === 'n:1') text = text.trim().replace(/:\s*1(?:\.0+)?\s*$/, '');
-      const nums = numbers(text);
+      const nums = numbers(text, rule.fractions);
       const last = nums.length ? nums[nums.length - 1] : null;
       if (last !== null && close(last, ans.values || [], Number(ans.tol || 0))) {
         const units = rule.unit_required || [];
@@ -114,7 +119,7 @@
       return { mode: 'exact', marks: Math.min(marks, max - 1), max, correct: false, steps, working, why };
     }
     if (rule.mode === 'figures') {
-      const nums = numbers(answer);
+      const nums = numbers(answer, rule.fractions);
       const low = ' ' + String(answer).toLowerCase().replace(/[^a-z0-9]+/g, ' ') + ' ';
       let got = 0, own = 0;
       const items = (rule.items || []).map(it => {
@@ -206,7 +211,7 @@
       : r.marks ? 'Your answer makes some of the mark-scheme points. The missing ones are marked ✗ below.'
       : 'Your answer does not yet make the mark-scheme points. Compare it with the correct answer below.';
     if (r.mode === 'figures') return (r.correct ? 'Every checkable item was found.' : 'Some credited items are missing.')
-      + (r.self_marks ? ` ${r.self_marks} presentation mark${r.self_marks > 1 ? 's' : ''} (dates, details, labels) you judge yourself against the model.` : '');
+      + (r.self_marks ? ` ${r.self_marks} ` + (rules()._self_check || `presentation mark${r.self_marks > 1 ? 's' : ''} (dates, details, labels) you judge yourself against the model`) + '.' : '');
     return 'Mark your own answer: compare it with the model answer below and tick each point you made.' + (r.tip ? ' ' + r.tip : '');
   }
 
