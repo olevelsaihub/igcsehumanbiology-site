@@ -66,20 +66,6 @@ try{
  }
 }catch{/* Plans and navigation remain usable when device storage is unavailable. */}
 
-// Give Study Poems a visible place in the shared course navigation.
-for (const nav of document.querySelectorAll('.course-nav')) {
- let poems = nav.querySelector('a[data-study-poems]');
- if (!poems) {
-  poems = document.createElement('a');
-  poems.className = 'nav-primary';
-  poems.dataset.studyPoems = '';
-  poems.href = '/igcsehumanbiology/poems/';
-  poems.textContent = 'Study Poems';
-  nav.insertBefore(poems, nav.querySelector('.nav-dropdown'));
- }
- if (location.pathname.startsWith('/igcsehumanbiology/poems/')) poems.setAttribute('aria-current', 'page');
-}
-
 // Keep canonical Teach Me lessons available on full pages and AJAX study plans.
 (() => {
   if (!document.querySelector('script[data-olv-english-videos]')) {

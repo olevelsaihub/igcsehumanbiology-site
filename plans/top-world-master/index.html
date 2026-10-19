@@ -3,14 +3,16 @@
 <script id="olv-student-guard">
 (function(){
  const file=/(?:^|[\/\s_.-])(?:mark[\s_-]*schemes?|answers?|solutions?|ms)(?:[/\s_.-]|$)|(?:^|\/)story(?:book|figs|text|[-.])/i;
+ const student=/(?:^|\/)workbooks\/types\/[a-z0-9-]+-ms\.pdf$/i;
  const label=/mark\s*schemes?|marking\s*schemes?|answer\s*(?:key|sheet)s?|^(?:[✅📄\s]*)(?:answers?|solutions?|marks)(?:\s*(?:PDF|\(teacher.*\)))?$|(?:show|reveal|view)\b.{0,25}\b(?:answer|solution)s?/i;
  function forbidden(el){
   if(el.hasAttribute('data-olv-placeholder'))return false;
   if(el.getAttribute('data-olv-access')==='teacher')return true;
-  if(el.tagName==='BUTTON'&&el.hasAttribute('data-show-response'))return false;
+  if(el.tagName==='BUTTON'&&(el.hasAttribute('data-show-response')||el.hasAttribute('data-download-paper')))return false;
+  if(el.tagName==='A'){try{if(student.test(decodeURIComponent(new URL(el.getAttribute('href')||'',document.baseURI).pathname)))return false;}catch(_){}}
   if(el.tagName==='DETAILS'){if(el.hasAttribute('data-student-response'))return false;const s=el.querySelector('summary');return s&&label.test(s.textContent);}
   if((el.tagName==='A'||el.tagName==='BUTTON')&&label.test(el.textContent.trim()))return true;
-  return ['href','src','data-src','data'].some(k=>{let v=el.getAttribute(k);if(!v)return false;try{return file.test(decodeURIComponent(new URL(v,document.baseURI).pathname));}catch(_){return true;}});
+  return ['href','src','data-src','data'].some(k=>{let v=el.getAttribute(k);if(!v)return false;try{const q=decodeURIComponent(new URL(v,document.baseURI).pathname);return file.test(q)&&!student.test(q);}catch(_){return true;}});
  }
  function clean(root){
   const els=[];if(root.nodeType===1)els.push(root);

@@ -3,14 +3,16 @@
 <script id="olv-student-guard">
 (function(){
  const file=/(?:^|[\/\s_.-])(?:mark[\s_-]*schemes?|answers?|solutions?|ms)(?:[/\s_.-]|$)|(?:^|\/)story(?:book|figs|text|[-.])/i;
+ const student=/(?:^|\/)workbooks\/types\/[a-z0-9-]+-ms\.pdf$/i;
  const label=/mark\s*schemes?|marking\s*schemes?|answer\s*(?:key|sheet)s?|^(?:[✅📄\s]*)(?:answers?|solutions?|marks)(?:\s*(?:PDF|\(teacher.*\)))?$|(?:show|reveal|view)\b.{0,25}\b(?:answer|solution)s?/i;
  function forbidden(el){
   if(el.hasAttribute('data-olv-placeholder'))return false;
   if(el.getAttribute('data-olv-access')==='teacher')return true;
-  if(el.tagName==='BUTTON'&&el.hasAttribute('data-show-response'))return false;
+  if(el.tagName==='BUTTON'&&(el.hasAttribute('data-show-response')||el.hasAttribute('data-download-paper')))return false;
+  if(el.tagName==='A'){try{if(student.test(decodeURIComponent(new URL(el.getAttribute('href')||'',document.baseURI).pathname)))return false;}catch(_){}}
   if(el.tagName==='DETAILS'){if(el.hasAttribute('data-student-response'))return false;const s=el.querySelector('summary');return s&&label.test(s.textContent);}
   if((el.tagName==='A'||el.tagName==='BUTTON')&&label.test(el.textContent.trim()))return true;
-  return ['href','src','data-src','data'].some(k=>{let v=el.getAttribute(k);if(!v)return false;try{return file.test(decodeURIComponent(new URL(v,document.baseURI).pathname));}catch(_){return true;}});
+  return ['href','src','data-src','data'].some(k=>{let v=el.getAttribute(k);if(!v)return false;try{const q=decodeURIComponent(new URL(v,document.baseURI).pathname);return file.test(q)&&!student.test(q);}catch(_){return true;}});
  }
  function clean(root){
   const els=[];if(root.nodeType===1)els.push(root);
@@ -37,4 +39,4 @@ sterilisation
 99
 • permanent method
 Evaluate these two methods of contraception using information from the table and
-your own knowledge.</p></details></main><footer class="footer"><a href="/igcsehumanbiology/?view=plans">Study plans</a><a href="/igcsehumanbiology/coverage.html">Course coverage</a><a href="/igcsehumanbiology/?view=practice&amp;tab=papers">Source papers</a><a href="/igcsehumanbiology/?view=types">Canonical methods</a><p>Pearson Edexcel International GCSE Human Biology (4HB1), linear qualification. Course materials by olevels.com. Original exam material © Pearson Education Ltd. Worked and model answers on this site are written by olevels.com; they are not official Pearson mark schemes.</p></footer></body></html>
+your own knowledge.</p></details></main><footer class="footer"><a href="/igcsehumanbiology/?view=plans">Study plans</a><a href="/igcsehumanbiology/coverage.html">Course coverage</a><a href="/igcsehumanbiology/?view=practice&amp;tab=papers">Source papers</a><a href="/igcsehumanbiology/?view=types">Canonical methods</a><p>Pearson Edexcel International GCSE Human Biology (4HB1), linear qualification. Course materials by olevels.com. Original exam material © Pearson Education Ltd. Worked and model answers on this site are written by olevels.com; they are not official Pearson mark schemes.</p></footer><script type="application/json" id="olv-rules">{"4HB1-2022-JUN-01-R-Q05-whole":{"mode":"self","ideal":"Sterilisation is the most effective method, so there is less risk of pregnancy with sterilisation than with condoms, which are less effective. Surgery carries a risk of infection or complications. Sterilisation cannot be reversed, so it is permanent. Condoms protect against sexually transmitted disease. Condoms can only be used once.","checklist":[{"text":"sterilisation most effective / condom less effective / less risk of pregnancy with sterilisation","marks":1},{"text":"surgery carries risk / risk of infection / complications","marks":1},{"text":"sterilisation cannot be reversed / permanent","marks":1},{"text":"condom protects against sexually transmitted disease","marks":1},{"text":"condoms can only be used once","marks":1}],"self_mark_tip":"Marked against the official mark scheme's points. Compare your answer with the model answer.","max":5,"type_id":"HBI-CONTRACEPTION-METHODS-AND-ACTION","scheme_source":"rows","kw":{"items":[{"label":"sterilisation most effective / condom less effective / less risk of pregnancy with sterilisation","marks":1,"kw":[["sterilis","effective"],["condom","effective"],["risk","pregnancy","sterilis"]],"pool":false},{"label":"surgery carries risk / risk of infection / complications","marks":1,"kw":[["surgery","carry","risk"],["risk","infection"],["complic"]],"pool":false},{"label":"sterilisation cannot be reversed / permanent","marks":1,"kw":[["sterilis","cannot","revers"],["permanent"]],"pool":false},{"label":"condom protects against sexually transmitted disease","marks":1,"kw":[["condom","protect","against","sexual","transmitt","disease"]],"pool":false},{"label":"condoms can only be used once","marks":1,"kw":[["condom","used","once"]],"pool":false}]}}}</script></body></html>

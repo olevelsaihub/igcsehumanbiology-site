@@ -95,7 +95,7 @@
 
 /* 3. Words that score */
 .kc-examq{display:flex;gap:12px;align-items:baseline;margin:6px 0 10px;padding:12px 16px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--navy);border-radius:8px}
-.kc-examq span{flex:none;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--coral)}
+.kc-examq>span{flex:none;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--coral)}
 .kc-examq p{margin:0;font-size:14px;font-weight:500;color:var(--navy)}
 .kc-chips{display:flex;flex-wrap:wrap;gap:8px}
 .kc-chip{min-height:42px;padding:8px 16px;border:2px dashed #b9c0cc;border-radius:999px;background:#fff;color:var(--navy);font-size:14px;font-weight:600}
@@ -154,7 +154,7 @@
  .kc-groups,.kc-two{grid-template-columns:1fr}
  .kc-group:last-child .kc-tiles{grid-template-columns:repeat(auto-fill,minmax(178px,1fr))}
  .kc-toggle{margin-left:0}
- .kc-examq{display:block}.kc-examq span{display:block;margin-bottom:4px}
+ .kc-examq{display:block}.kc-examq>span{display:block;margin-bottom:4px}
  .kc-quiz{padding:14px}
 }
 @media(prefers-reduced-motion:reduce){.kc-scene .kc-force .kc-badge{animation:none!important}.kc-shaft,.kc-arrowhead,.kc-qbar span{transition:none}}
@@ -186,7 +186,7 @@
 .kc-unit-traps li{margin:3px 0}
 .kc-example{margin-top:12px;padding:14px 16px;background:#f7f8fa;border-radius:12px}
 .kc-example-q{margin:0 0 8px;font-weight:500;color:var(--navy)}
-.kc-example-q span{display:inline-block;margin-right:8px;padding:2px 8px;border-radius:999px;background:var(--coral);color:#fff;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.kc-example-q>span:first-child{display:inline-block;margin-right:8px;padding:2px 8px;border-radius:999px;background:var(--coral);color:#fff;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .kc-example ol{margin:0 0 10px;padding-left:22px}.kc-example li{margin:4px 0;font-size:14px}
 .kc-example li:last-child:not([hidden]){font-weight:600;color:var(--green)}
 

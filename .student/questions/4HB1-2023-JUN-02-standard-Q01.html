@@ -3,14 +3,16 @@
 <script id="olv-student-guard">
 (function(){
  const file=/(?:^|[\/\s_.-])(?:mark[\s_-]*schemes?|answers?|solutions?|ms)(?:[/\s_.-]|$)|(?:^|\/)story(?:book|figs|text|[-.])/i;
+ const student=/(?:^|\/)workbooks\/types\/[a-z0-9-]+-ms\.pdf$/i;
  const label=/mark\s*schemes?|marking\s*schemes?|answer\s*(?:key|sheet)s?|^(?:[✅📄\s]*)(?:answers?|solutions?|marks)(?:\s*(?:PDF|\(teacher.*\)))?$|(?:show|reveal|view)\b.{0,25}\b(?:answer|solution)s?/i;
  function forbidden(el){
   if(el.hasAttribute('data-olv-placeholder'))return false;
   if(el.getAttribute('data-olv-access')==='teacher')return true;
-  if(el.tagName==='BUTTON'&&el.hasAttribute('data-show-response'))return false;
+  if(el.tagName==='BUTTON'&&(el.hasAttribute('data-show-response')||el.hasAttribute('data-download-paper')))return false;
+  if(el.tagName==='A'){try{if(student.test(decodeURIComponent(new URL(el.getAttribute('href')||'',document.baseURI).pathname)))return false;}catch(_){}}
   if(el.tagName==='DETAILS'){if(el.hasAttribute('data-student-response'))return false;const s=el.querySelector('summary');return s&&label.test(s.textContent);}
   if((el.tagName==='A'||el.tagName==='BUTTON')&&label.test(el.textContent.trim()))return true;
-  return ['href','src','data-src','data'].some(k=>{let v=el.getAttribute(k);if(!v)return false;try{return file.test(decodeURIComponent(new URL(v,document.baseURI).pathname));}catch(_){return true;}});
+  return ['href','src','data-src','data'].some(k=>{let v=el.getAttribute(k);if(!v)return false;try{const q=decodeURIComponent(new URL(v,document.baseURI).pathname);return file.test(q)&&!student.test(q);}catch(_){return true;}});
  }
  function clean(root){
   const els=[];if(root.nodeType===1)els.push(root);
@@ -33,4 +35,4 @@ site of fertilisation
 site where sperm is deposited during intercourse
 place where zygote implants
 tube that carries sperm and urine
-produces the fluid part of semen</p></details></main><footer class="footer"><a href="/igcsehumanbiology/?view=plans">Study plans</a><a href="/igcsehumanbiology/coverage.html">Course coverage</a><a href="/igcsehumanbiology/?view=practice&amp;tab=papers">Source papers</a><a href="/igcsehumanbiology/?view=types">Canonical methods</a><p>Pearson Edexcel International GCSE Human Biology (4HB1), linear qualification. Course materials by olevels.com. Original exam material © Pearson Education Ltd. Worked and model answers on this site are written by olevels.com; they are not official Pearson mark schemes.</p></footer></body></html>
+produces the fluid part of semen</p></details></main><footer class="footer"><a href="/igcsehumanbiology/?view=plans">Study plans</a><a href="/igcsehumanbiology/coverage.html">Course coverage</a><a href="/igcsehumanbiology/?view=practice&amp;tab=papers">Source papers</a><a href="/igcsehumanbiology/?view=types">Canonical methods</a><p>Pearson Edexcel International GCSE Human Biology (4HB1), linear qualification. Course materials by olevels.com. Original exam material © Pearson Education Ltd. Worked and model answers on this site are written by olevels.com; they are not official Pearson mark schemes.</p></footer><script type="application/json" id="olv-rules">{"4HB1-2023-JUN-02-standard-Q01-whole":{"mode":"self","ideal":"Testis produces sperm. Oviduct is the site of fertilisation. Vagina is the site where sperm is deposited. Uterus is where the zygote implants. Urethra is the tube that carries sperm and urine. Prostate produces the fluid part of semen.","checklist":[{"text":"testis","marks":1},{"text":"oviduct","marks":1},{"text":"vagina","marks":1},{"text":"uterus","marks":1},{"text":"urethra","marks":1},{"text":"prostate","marks":1}],"self_mark_tip":"Marked against the official mark scheme's points. Compare your answer with the model answer.","max":6,"type_id":"HBI-MATCH-REPRODUCTIVE-ORGAN-TO-ROLE","scheme_source":"rows","kw":{"items":[{"label":"testis","marks":1,"kw":[["testi"]],"pool":false},{"label":"oviduct","marks":1,"kw":[["oviduct"]],"pool":false},{"label":"vagina","marks":1,"kw":[["vagina"]],"pool":false},{"label":"uterus","marks":1,"kw":[["uteru"]],"pool":false},{"label":"urethra","marks":1,"kw":[["urethra"]],"pool":false},{"label":"prostate","marks":1,"kw":[["prostate"]],"pool":false}]}}}</script></body></html>

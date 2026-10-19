@@ -3,14 +3,16 @@
 <script id="olv-student-guard">
 (function(){
  const file=/(?:^|[\/\s_.-])(?:mark[\s_-]*schemes?|answers?|solutions?|ms)(?:[/\s_.-]|$)|(?:^|\/)story(?:book|figs|text|[-.])/i;
+ const student=/(?:^|\/)workbooks\/types\/[a-z0-9-]+-ms\.pdf$/i;
  const label=/mark\s*schemes?|marking\s*schemes?|answer\s*(?:key|sheet)s?|^(?:[✅📄\s]*)(?:answers?|solutions?|marks)(?:\s*(?:PDF|\(teacher.*\)))?$|(?:show|reveal|view)\b.{0,25}\b(?:answer|solution)s?/i;
  function forbidden(el){
   if(el.hasAttribute('data-olv-placeholder'))return false;
   if(el.getAttribute('data-olv-access')==='teacher')return true;
-  if(el.tagName==='BUTTON'&&el.hasAttribute('data-show-response'))return false;
+  if(el.tagName==='BUTTON'&&(el.hasAttribute('data-show-response')||el.hasAttribute('data-download-paper')))return false;
+  if(el.tagName==='A'){try{if(student.test(decodeURIComponent(new URL(el.getAttribute('href')||'',document.baseURI).pathname)))return false;}catch(_){}}
   if(el.tagName==='DETAILS'){if(el.hasAttribute('data-student-response'))return false;const s=el.querySelector('summary');return s&&label.test(s.textContent);}
   if((el.tagName==='A'||el.tagName==='BUTTON')&&label.test(el.textContent.trim()))return true;
-  return ['href','src','data-src','data'].some(k=>{let v=el.getAttribute(k);if(!v)return false;try{return file.test(decodeURIComponent(new URL(v,document.baseURI).pathname));}catch(_){return true;}});
+  return ['href','src','data-src','data'].some(k=>{let v=el.getAttribute(k);if(!v)return false;try{const q=decodeURIComponent(new URL(v,document.baseURI).pathname);return file.test(q)&&!student.test(q);}catch(_){return true;}});
  }
  function clean(root){
   const els=[];if(root.nodeType===1)els.push(root);
@@ -38,4 +40,4 @@ starts carbohydrate digestion
 has a pH of 2
 has villi
 absorbs most water
-connects with bile duct</p></details></main><footer class="footer"><a href="/igcsehumanbiology/?view=plans">Study plans</a><a href="/igcsehumanbiology/coverage.html">Course coverage</a><a href="/igcsehumanbiology/?view=practice&amp;tab=papers">Source papers</a><a href="/igcsehumanbiology/?view=types">Canonical methods</a><p>Pearson Edexcel International GCSE Human Biology (4HB1), linear qualification. Course materials by olevels.com. Original exam material © Pearson Education Ltd. Worked and model answers on this site are written by olevels.com; they are not official Pearson mark schemes.</p></footer></body></html>
+connects with bile duct</p></details></main><footer class="footer"><a href="/igcsehumanbiology/?view=plans">Study plans</a><a href="/igcsehumanbiology/coverage.html">Course coverage</a><a href="/igcsehumanbiology/?view=practice&amp;tab=papers">Source papers</a><a href="/igcsehumanbiology/?view=types">Canonical methods</a><p>Pearson Edexcel International GCSE Human Biology (4HB1), linear qualification. Course materials by olevels.com. Original exam material © Pearson Education Ltd. Worked and model answers on this site are written by olevels.com; they are not official Pearson mark schemes.</p></footer><script type="application/json" id="olv-rules">{"4HB1-2020-NOV-01-standard-Q01-whole":{"mode":"self","ideal":"Starts protein digestion: stomach. Starts carbohydrate digestion: mouth. Has a pH of 2: stomach. Has villi: small intestine. Absorbs most water: large intestine. Connects with bile duct: small intestine.","checklist":[{"text":"starts protein digestion: stomach","marks":1},{"text":"starts carbohydrate digestion: mouth","marks":1},{"text":"has a pH of 2: stomach","marks":1},{"text":"has villi: small intestine","marks":1},{"text":"absorbs most water: large intestine","marks":1},{"text":"connects with bile duct: small intestine","marks":1}],"self_mark_tip":"Marked against the official mark scheme's points. Compare your answer with the model answer.","max":6,"type_id":"HBI-GUT-ORGANS-IDENTIFY-AND-ROLE","scheme_source":"rows","kw":{"items":[{"label":"starts protein digestion: stomach","marks":1,"kw":[["stomach"]],"pool":false},{"label":"starts carbohydrate digestion: mouth","marks":1,"kw":[["mouth"]],"pool":false},{"label":"has a pH of 2: stomach","marks":1,"kw":[["stomach"]],"pool":false},{"label":"has villi: small intestine","marks":1,"kw":[["small","intestine"]],"pool":false},{"label":"absorbs most water: large intestine","marks":1,"kw":[["large","intestine"]],"pool":false},{"label":"connects with bile duct: small intestine","marks":1,"kw":[["small","intestine"]],"pool":false}]}}}</script></body></html>

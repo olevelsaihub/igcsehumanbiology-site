@@ -80,6 +80,8 @@ function getMarkingSession(refresh = false) {
 }
 
 async function markOnServer(root, answer) {
+  const local = window.OlvMarkingAdapter?.local?.(root, answer);
+  if (local) return { result: local };
   for (const retry of [false, true]) {
     const session = await getMarkingSession(retry);
     if (!session?.csrf) return { unavailable: true };
@@ -209,6 +211,7 @@ for (const root of scope.querySelectorAll('[data-answer-checker]:not([data-answe
     finally { button.disabled = false; button.textContent = label; }
     if (outcome.error) { showMessage(root, 'warning', outcome.error); return; }
     const result = outcome.result;
+    if (!result && window.OlvMarkingAdapter) { save(root, { status: 'draft', score: null }); showMessage(root, 'warning', window.OlvMarkingAdapter.unavailable); return; }
     if (!result || result.mode === 'self' || result.score === null) { localCheck(root, answer, result?.mode === 'self' ? (result.summary || 'This answer needs a drawing, graph or table, so compare it with the correct answer and mark it yourself.') : ''); return; }
     const full = result.score === result.max;
     save(root, { status: full ? 'secure' : 'review', score: result.score, checkKind: 'marked-' + result.mode, markedBy: result.engine });

@@ -524,6 +524,8 @@ function olv_gate_teacher_file(string $relative): bool
 {
     // Includes official PDF names (" MS.pdf"), crops (-MS.webp), answer sheets and stories.
     // Release ZIPs can contain both roles' pages and must never be a student download.
+    // The type MS PDFs are for students (Bareera, 16 Oct 2026: practice PDF as separate QP and MS files).
+    if (preg_match('~^workbooks/types/[a-z0-9-]+-ms\.pdf$~', $relative)) { return false; }
     return (bool)preg_match('~(?:^|[/\s_.-])(?:mark[\s_-]*schemes?|answers?|solutions?|ms)(?:[/\s_.-]|$)|(?:^|/)story(?:book|figs|text|[-.])~i', $relative)
         || strtolower(pathinfo($relative, PATHINFO_EXTENSION)) === 'zip';
 }
