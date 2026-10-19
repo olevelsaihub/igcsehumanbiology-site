@@ -70,7 +70,7 @@ try{
 (() => {
   if (!document.querySelector('script[data-olv-english-videos]')) {
     const script = document.createElement('script');
-    script.src = '/igcsehumanbiology/video-library/student-videos.js?v=658690019b';
+    script.src = '/igcsehumanbiology/video-library/student-videos.js?v=18f97d758a';
     script.dataset.olvEnglishVideos = 'true';
     document.head.append(script);
   }
@@ -78,7 +78,7 @@ try{
     if (nav.querySelector('[data-video-lessons]')) continue;
     const link = document.createElement('a');
     link.className = 'nav-primary'; link.dataset.videoLessons = '';
-    link.href = '/igcsehumanbiology/video-library/'; link.textContent = 'Video Lessons';
+    link.href = '/igcsehumanbiology/video-library/lessons.html'; link.textContent = 'Video Lessons';
     nav.insertBefore(link, nav.querySelector('.nav-dropdown'));
   }
 })();
