@@ -138,7 +138,15 @@
         if (ok) marks += Number(it.marks);
         return { label: it.label, marks: it.marks, found: ok };
       });
-      return { mode: 'keywords', marks: Math.min(marks, max), max, correct: marks >= max, items, ideal: rule.ideal || rule.credit || '',
+      // Listing the subject's stock words is not explaining (open_marking.py GATE): under 15% of the answer's content
+      // words on this question's points caps the mark at a quarter.
+      const skip = new Set(rules()._skip || []);
+      const cw = [...new Set(words(answer).filter(w => w.length >= 2 && !skip.has(w)))];
+      const kwSet = new Set([...rule.kw.items.flatMap(it => it.kw.flat()), ...(rule.kw.pool || []).flat(),
+        ...rule.kw.items.flatMap(it => words(it.label || '').filter(w => w.length >= 2 && !skip.has(w)))]);
+      const listing = cw.length > 0 && cw.filter(w => [...kwSet].some(x => has(new Set([w]), x))).length / cw.length < (rule.kw.gate ?? 0.15);
+      if (listing) marks = Math.min(marks, Math.floor(max / 4));
+      return { mode: 'keywords', marks: Math.min(marks, max), max, correct: marks >= max, items, listing, ideal: rule.ideal || rule.credit || '',
         levels: rule.levels || null, tip: rule.self_mark_tip || '' };
     }
     if (rule.mode === 'self') return { mode: 'self', marks: null, max, ideal: rule.ideal || rule.credit || '', checklist: rule.checklist || [], levels: rule.levels || null, tip: rule.self_mark_tip || '' };
@@ -193,6 +201,7 @@
     if (r.mode === 'mcq') return r.correct === null ? r.feedback : r.correct ? 'Your answer is correct.' : `Not this one. The correct answer is option ${r.key}.`;
     if (r.mode === 'numeric') return r.correct ? 'Your final answer is correct.' : 'Your final answer is not right yet. The marks below are for the working the check found.';
     if (r.mode === 'exact') return r.correct ? 'Your answer is correct.' : 'Not right yet. The marks below are for the parts of the answer the check found.';
+    if (r.mode === 'keywords' && r.listing && r.marks < r.max) return 'Your answer lists key words without explaining this question\'s points, so it earns at most a quarter of the marks. Explain each point in a sentence, then compare with the correct answer below.';
     if (r.mode === 'keywords') return r.correct ? 'Your answer makes every mark-scheme point.'
       : r.marks ? 'Your answer makes some of the mark-scheme points. The missing ones are marked ✗ below.'
       : 'Your answer does not yet make the mark-scheme points. Compare it with the correct answer below.';

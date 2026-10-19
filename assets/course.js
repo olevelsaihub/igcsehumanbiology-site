@@ -70,7 +70,7 @@ try{
 (() => {
   if (!document.querySelector('script[data-olv-english-videos]')) {
     const script = document.createElement('script');
-    script.src = '/igcsehumanbiology/video-library/student-videos.js?v=0264b92b4c';
+    script.src = '/igcsehumanbiology/video-library/student-videos.js?v=ee951cb0d4';
     script.dataset.olvEnglishVideos = 'true';
     document.head.append(script);
   }

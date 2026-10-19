@@ -21,7 +21,7 @@
 })().catch(()=>{});
 
 // Student progress for teachers (where each student is). Never changes the page.
-(function(){if(window.olvProgress||document.querySelector('script[data-olv-progress]'))return;var s=document.createElement('script');s.src='/igcsehumanbiology/assets/progress.js?v=0264b92b4c';s.defer=true;s.setAttribute('data-olv-progress','');document.head.appendChild(s);})();
+(function(){if(window.olvProgress||document.querySelector('script[data-olv-progress]'))return;var s=document.createElement('script');s.src='/igcsehumanbiology/assets/progress.js?v=ee951cb0d4';s.defer=true;s.setAttribute('data-olv-progress','');document.head.appendChild(s);})();
 
 // Ask AI was removed. Browsers may still hold an older cached page pen that draws the button, so remove it here too.
 (function(){function strip(){var h=document.getElementById('olevels-page-pencil'),r=h&&h.shadowRoot;if(r)r.querySelectorAll('.ask-ai,[data-action="ask-ai"]').forEach(function(b){b.remove();});}strip();window.addEventListener('load',strip);setTimeout(strip,1500);})();
