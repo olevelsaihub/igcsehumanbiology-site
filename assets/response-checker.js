@@ -1,5 +1,5 @@
-import { CHECKER_VERSION, cleanAnswer, evaluateChoice, currentAttempt, mergeAttempt } from './response-checker-core.mjs?v=18f97d758a';
-import { checkWrittenAnswer } from './written-response-core.mjs?v=18f97d758a';
+import { CHECKER_VERSION, cleanAnswer, evaluateChoice, currentAttempt, mergeAttempt } from './response-checker-core.mjs?v=91ddc1ee35';
+import { checkWrittenAnswer } from './written-response-core.mjs?v=91ddc1ee35';
 
 const storageKey = 'igcsehumanbiology-practice-results-v1';
 const markingApi = '/igcsehumanbiology/';

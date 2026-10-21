@@ -8,7 +8,7 @@
   const pdfMaker = () => pdfPromise ||= new Promise((resolve, reject) => {
     if (window.OlvPaperDownloads?.pdfBlob) return resolve(window.OlvPaperDownloads);
     const script = document.createElement('script');
-    script.src = '/igcsehumanbiology/assets/paper-downloads.js?v=18f97d758a';
+    script.src = '/igcsehumanbiology/assets/paper-downloads.js?v=91ddc1ee35';
     script.onload = () => window.OlvPaperDownloads?.pdfBlob ? resolve(window.OlvPaperDownloads) : reject(new Error('The PDF tool is unavailable.'));
     script.onerror = () => reject(new Error('The PDF tool is unavailable. Please try again.'));
     document.head.append(script);

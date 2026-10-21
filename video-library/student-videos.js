@@ -5,11 +5,11 @@
   window.olvHumanBiologyVideosLoaded = true;
   const base = '/igcsehumanbiology/video-library/';
   const style = document.createElement('link');
-  style.rel = 'stylesheet'; style.href = base + 'student-videos.css?v=18f97d758a'; document.head.append(style);
+  style.rel = 'stylesheet'; style.href = base + 'student-videos.css?v=91ddc1ee35'; document.head.append(style);
   const chapterPlayerReady = new Promise(resolve => {
     if (window.olvCreateChapterPlayer) { resolve(window.olvCreateChapterPlayer); return; }
     const script = document.createElement('script');
-    script.src = base + 'chapter-player.js?v=18f97d758a';
+    script.src = base + 'chapter-player.js?v=91ddc1ee35';
     script.onload = () => resolve(window.olvCreateChapterPlayer);
     script.onerror = () => resolve(null);
     document.head.append(script);
@@ -19,8 +19,8 @@
   function loadGuidedPlayer() {
     guidedAssets ||= chapterPlayerReady.then(() => new Promise(resolve => {
       if (window.olvMountGuidedPlayer) { resolve(window.olvMountGuidedPlayer); return; }
-      const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = base + 'guided-player.css?v=18f97d758a'; document.head.append(css);
-      const script = document.createElement('script'); script.src = base + 'guided-player.js?v=18f97d758a';
+      const css = document.createElement('link'); css.rel = 'stylesheet'; css.href = base + 'guided-player.css?v=91ddc1ee35'; document.head.append(css);
+      const script = document.createElement('script'); script.src = base + 'guided-player.js?v=91ddc1ee35';
       script.onload = () => resolve(window.olvMountGuidedPlayer); script.onerror = () => resolve(null); document.head.append(script);
     }));
     return guidedAssets;
