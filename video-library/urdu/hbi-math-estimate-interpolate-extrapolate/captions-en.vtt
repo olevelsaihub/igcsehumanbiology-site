@@ -1,0 +1,52 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:20.913
+Sometimes you must estimate a value that was not measured. Interpolating means estimating a value between two measured values. On this made-up graph, there is no reading at 30. Assume a steady change between the readings at 20 and 40. The estimate is 26.
+
+00:00:21.500 --> 00:00:33.040
+Extrapolating means continuing a trend beyond the last measured value. Here the line goes up 8 for every 10, so carry it on. At 50, the estimate is 42.
+
+00:00:34.150 --> 00:00:54.659
+Step one: find the readings on each side of the target. Step two: find the change between them. Step three: work out how far along the target is. Step four: give one value inside the bracket, with its unit. Step five: explain the readings and steps you used.
+
+00:00:55.250 --> 00:01:11.719
+For example, in a made-up table, an enzyme makes 12 cubic centimetres of oxygen at 20 degrees and 20 at 30 degrees. To estimate at 25 degrees, note it is halfway, so the oxygen is halfway too: 16 cubic centimetres.
+
+00:01:12.300 --> 00:01:30.543
+To extrapolate to a later time, find the steady fall. This made-up drug level in the blood starts at 400 units and falls by 50 each hour, down to 300 at 2 hours. To reach 100 is a fall of 200, so four hours more. That is at 6 hours.
+
+00:01:31.100 --> 00:01:42.930
+Your estimate must lie between the two readings you used. It goes inside the bracket, not outside it. Give one value, the unit, and say which two readings you used.
+
+00:01:43.500 --> 00:01:54.797
+Caffeine is a drug in coffee that raises heart rate. In this made-up data, no caffeine gives 70 beats per minute and a full dose gives 90. A half dose is about 80.
+
+00:01:55.900 --> 00:02:19.363
+A student puts cylinders of potato into sugar solutions and finds the percentage change in mass. Concentration is in arbitrary units, au, a scale with no real unit. Here are the results. Estimate the concentration that gives no change in mass, and explain how. Four marks.
+
+00:02:19.950 --> 00:02:38.634
+First, put the results in order of concentration. No change in mass means zero percent. The sign changes between 0.25 au, at plus 4 percent, and 0.50 au, at minus 1 percent. So the answer lies between these.
+
+00:02:39.200 --> 00:02:55.581
+Between 0.25 and 0.50 au, the mass change falls by 5 percent, from plus 4 to minus 1, over 0.25 au. So each 1 percent fall needs 0.25 divided by 5, which is 0.05 au.
+
+00:02:56.150 --> 00:03:09.353
+To fall from plus 4 to zero is a four percent fall. 4 times 0.05 is 0.20 au. Add this to 0.25: the estimate is 0.45 au.
+
+00:03:09.950 --> 00:03:32.582
+So: 0 percent lies between 0.25 and 0.50 au. The change is 5 percent, which is 0.05 au per 1 percent. 4 times 0.05 is 0.20. The answer is 0.45 au. This answer is by olevels.com, not an official mark scheme.
+
+00:03:33.700 --> 00:03:50.283
+A common mistake is giving a value outside the bracket, such as 0.75 au. Another is just picking 0.50 au because minus 1 is closest to zero. Work between the two readings.
+
+00:03:50.850 --> 00:04:01.886
+Another mistake is ignoring the minus sign. 4 minus minus 1 is 5, not 3. And when the question asks how, explain which readings you used.
+
+00:04:03.000 --> 00:04:26.931
+Your turn. These numbers are made up. Measles cases in a town were 560 in 2019, 500 in 2020, 440 in 2021 and 380 in 2022. If this trend continues, estimate the first year with fewer than 150 cases. Explain how. Pause here and work it out.
+
+00:04:28.050 --> 00:04:44.694
+The cases fall by 60 each year. Carry the trend on: 320 in 2023, 260 in 2024, 200 in 2025, then 140 in 2026. That is the first year below 150.
+
+00:04:45.950 --> 00:04:55.713
+So the answer is 2026. The reason: cases fall by 60 a year, so count on from 2022 until they drop below 150.

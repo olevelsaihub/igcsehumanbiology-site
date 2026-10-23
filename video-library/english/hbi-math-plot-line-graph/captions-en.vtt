@@ -1,49 +1,52 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:20.587
-A line graph shows how one quantity changes as another changes smoothly, like time. Time is continuous: every value in between is possible. In this made-up example, oxygen is given off by an enzyme, and its volume is measured every 2 minutes. An enzyme is a protein that speeds up a reaction.
+00:00:00.000 --> 00:00:21.492
+Idea. A line graph shows how one quantity changes as another changes smoothly, like time. Time is continuous: every value in between is possible. In this made-up example, oxygen is given off by an enzyme, and its volume is measured every 2 minutes. An enzyme is a protein that speeds up a reaction.
 
-00:00:21.700 --> 00:00:40.367
-Step one. The x-axis is the line across the bottom. The y-axis is the line up the side. Put the variable you changed on the x-axis. That is usually time. The variable you measured goes on the y-axis. Copy each axis label, with its unit, from the table heading.
+00:00:22.600 --> 00:00:41.956
+Method. Step one. The x-axis is the line across the bottom. The y-axis is the line up the side. Put the variable you changed on the x-axis. That is usually time. The variable you measured goes on the y-axis. Copy each axis label, with its unit, from the table heading.
 
-00:00:40.950 --> 00:00:53.857
+00:00:42.550 --> 00:00:55.797
 Step two. Choose a scale with equal, easy steps, like 1, 2, 5, 10 or 20 for each big square. For minutes, 15 also works. The points must fill more than half the grid each way.
 
-00:00:54.450 --> 00:01:02.727
+00:00:56.350 --> 00:01:04.887
 Step three. Plot each point with a small, neat cross, using a sharp pencil. Each point must be accurate to half a small square.
 
-00:01:03.300 --> 00:01:16.804
+00:01:05.450 --> 00:01:19.154
 Step four. Join the points exactly as the question says. Some questions want straight lines, drawn with a ruler from point to point. Others want one smooth curve. If it says neither, only plot the points.
 
-00:01:17.400 --> 00:01:25.507
+00:01:19.750 --> 00:01:28.087
 With two sets of data, plot both on the same grid. Then label each line, or add a key, so the examiner knows which is which.
 
-00:01:26.650 --> 00:01:42.373
-Here is a real exam question. A glucose tolerance test measures blood glucose every 30 minutes for 3 hours, for a person without diabetes and a person with diabetes. Plot the results, and join the points with straight lines.
+00:01:29.200 --> 00:01:45.997
+Worked example. Here is a real exam question. A glucose tolerance test measures blood glucose every 30 minutes for 3 hours, for a person without diabetes and a person with diabetes. Plot the results, and join the points with straight lines.
 
-00:01:42.950 --> 00:02:01.147
+00:01:46.550 --> 00:02:00.052
+Here is the table of results. Time in minutes is in the first column. Then the blood glucose in milligrams per 100 cubic centimetres, for the person without diabetes and the person with diabetes.
+
+00:02:00.650 --> 00:02:19.037
 Time was chosen by the scientist, so it goes on the x-axis. The grid is 16 big squares wide. 15 minutes per big square uses 12 of them. Glucose goes up to 230, so 0 to 240, in 20s, uses all 12 big squares up.
 
-00:02:01.700 --> 00:02:21.839
+00:02:19.600 --> 00:02:39.999
 Plot the seven points for each person. Without diabetes: 65, 120, 130, 95, 80, 65 and 65. With diabetes: 110, 215, 230, 200, 190, 180 and 170.
 
-00:02:22.400 --> 00:02:34.112
+00:02:40.550 --> 00:02:52.920
 Join each set with straight lines, using a ruler. Then label the lines: without diabetes, and with diabetes. This graph is by olevels.com, not an official mark scheme.
 
-00:02:35.250 --> 00:02:42.909
-A common mistake is putting time on the y-axis. Time was chosen, so it always goes across, on the x-axis.
+00:02:54.050 --> 00:03:03.273
+Common mistake. A common mistake is putting time on the y-axis. Time was chosen, so it always goes across, on the x-axis.
 
-00:02:43.500 --> 00:02:51.777
+00:03:03.850 --> 00:03:12.307
 Another mistake is an uneven scale, or a scale that uses less than half the grid. Use equal steps, and spread the points out.
 
-00:02:52.900 --> 00:03:11.204
+00:03:13.450 --> 00:03:32.104
 Your turn. After exercise, a student's pulse rate is measured every 2 minutes for 10 minutes: 120, 105, 92, 84, 78 and 76 beats per minute. Plot a graph and join the points with a smooth curve. Pause here and work it out.
 
-00:03:12.350 --> 00:03:25.086
-Time goes on the x-axis, from 0 to 10, in steps of 2. Pulse rate goes on the y-axis, from 0 to 140, in steps of 20. Label both axes with their units.
+00:03:33.250 --> 00:03:46.863
+Answer. Time goes on the x-axis, from 0 to 10, in steps of 2. Pulse rate goes on the y-axis, from 0 to 140, in steps of 20. Label both axes with their units.
 
-00:03:25.650 --> 00:03:31.367
+00:03:47.450 --> 00:03:53.327
 Plot the six points with neat crosses. Then draw one smooth curve through them, without a ruler.
 
-00:03:31.950 --> 00:03:44.131
+00:03:53.900 --> 00:04:06.351
 So, every time: the changed variable on the x-axis. Label both axes with units. Use an even scale over half the grid. Plot carefully, then join as the question says.

@@ -1,0 +1,49 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:18.463
+The genetic code is read in threes. Three bases in a row are called a triplet. Each triplet codes for one amino acid. Amino acids are the units that join to make a protein. So nine bases code for three amino acids.
+
+00:00:19.050 --> 00:00:43.291
+Messenger RNA, or mRNA, is a copy of the gene. On the mRNA, a triplet is called a codon. Transfer RNA, or tRNA, brings an amino acid. On the tRNA, the matching triplet is the anticodon. Use the pairing rules. RNA has uracil, U, instead of thymine. So the DNA triplet T, A, C, makes the codon A, U, G. That pairs with the anticodon U, A, C.
+
+00:00:44.800 --> 00:01:03.245
+Here is the method. First, write which molecule you start with, and which one the table uses. Then convert one base at a time. Remember, RNA has U, and DNA has T. Read in groups of three, from the start.
+
+00:01:03.800 --> 00:01:23.395
+How many different triplets are there? Each of the three places can hold one of four bases. So four times four times four. That is four cubed, or sixty-four. For counts, each amino acid needs three bases. So multiply or divide by three, and show your working.
+
+00:01:23.950 --> 00:01:39.261
+Two quick examples. A protein has fifty amino acids. Fifty times three is one hundred and fifty bases. A strand of DNA has one hundred and fifty-three bases. One hundred and fifty-three divided by three is fifty-one amino acids.
+
+00:01:39.850 --> 00:01:49.334
+If a whole triplet is deleted, one amino acid is missing from the protein. The protein may then have a different shape, so it may not work.
+
+00:01:50.450 --> 00:02:06.614
+Here is a real exam question. The diagram shows protein synthesis. Amino acid X is on a tRNA. Its anticodon, printed below it, is U, G, U. Part c asks: give the name of amino acid X.
+
+00:02:07.200 --> 00:02:18.797
+The table uses DNA, so convert. The anticodon U, G, U pairs with the mRNA codon. U pairs with A, and G with C. So the codon is A, C, A.
+
+00:02:20.850 --> 00:02:33.401
+Now convert the codon back to DNA. A came from T, C came from G, and A came from T. So the DNA triplet is T, G, T. Check: that is the anticodon, with T in place of U.
+
+00:02:34.000 --> 00:02:44.826
+Find T, G, T in the table. It codes for threonine. So amino acid X is threonine. This answer is by olevels.com, not the official mark scheme.
+
+00:02:45.950 --> 00:02:57.696
+The common mistake here is to look up the codon A, C, A, straight in the DNA table. That gives cysteine, which is wrong. Convert to the DNA triplet first.
+
+00:02:58.250 --> 00:03:08.956
+Other mistakes: writing T in an RNA sequence, or U in DNA. And for the number of codes, four times three is twelve, which is wrong. It is four cubed, sixty-four.
+
+00:03:10.100 --> 00:03:29.882
+Your turn. An mRNA codon is G, U, U. First, give the DNA triplet and the tRNA anticodon. Second, use the table to name the amino acid. Third, a protein has one hundred and twenty amino acids. How many bases on one DNA strand code for it? Pause here and work it out.
+
+00:03:31.000 --> 00:03:42.521
+Part a. G pairs with C, and U pairs with A. So the DNA triplet is C, A, A. The anticodon also pairs with the codon, so it is C, A, A, too.
+
+00:03:43.100 --> 00:03:56.429
+Part b. Look up C, A, A, in the DNA table. It is valine. Part c. Each amino acid needs three bases. One hundred and twenty times three is three hundred and sixty bases.
+
+00:03:57.000 --> 00:04:08.598
+So, every time: match the table's molecule, convert one base at a time, and read in threes. For counts, times or divide by three. For codes, four cubed is sixty-four.

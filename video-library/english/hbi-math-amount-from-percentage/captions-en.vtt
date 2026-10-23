@@ -1,49 +1,49 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:16.768
-Per cent means out of every 100. So 6 per cent means 6 out of every 100. If a town has 500 people, and 6 per cent have diabetes, how many is that? 500 times 6, divided by 100, is 30 people.
+00:00:00.000 --> 00:00:17.465
+Idea. Per cent means out of every 100. So 6 per cent means 6 out of every 100. If a town has 500 people, and 6 per cent have diabetes, how many is that? 500 times 6, divided by 100, is 30 people.
 
-00:00:17.900 --> 00:00:29.335
-Step one. Find the total and the percentage. Step two. Turn the percentage into a decimal: divide it by 100. Step three. Multiply the total by that decimal.
+00:00:18.600 --> 00:00:31.077
+Method. Step one. Find the total and the percentage. Step two. Turn the percentage into a decimal: divide it by 100. Step three. Multiply the total by that decimal.
 
-00:00:29.900 --> 00:00:41.676
+00:00:31.650 --> 00:00:43.616
 A fraction works the same way. 'One in four' means divide the total by 4. That is the same as 25 per cent. So, one in four of 800 people is 200.
 
-00:00:42.250 --> 00:01:04.095
+00:00:44.200 --> 00:01:06.215
 A probability is the chance that something happens, from 0 to 1. It is already a decimal. For example, two parents breed. Offspring are the young they produce. Each offspring may have a probability of 0.25 of showing a feature. Out of 80 offspring, the number expected is 80 times 0.25, which is 20.
 
-00:01:04.650 --> 00:01:25.663
+00:01:06.800 --> 00:01:27.993
 Sometimes a value rises or falls by a percentage. For a fall of 30 per cent, multiply by 1 minus 0.30, which is 0.70. 4600 times 0.70 is 3220. For a rise, multiply by 1 plus the decimal.
 
-00:01:26.250 --> 00:01:37.194
+00:01:28.550 --> 00:01:39.794
 Step four. Keep the same units as the total. If the total is in millions, the answer is in millions. Step five. Round only at the end, to what the question asks.
 
-00:01:38.300 --> 00:01:52.401
-Here is a real exam question. The population of the United Kingdom is 66.65 million. Diabetes affects 6.0 per cent of them. Calculate the number of people with diabetes.
+00:01:40.900 --> 00:01:56.130
+Worked example. Here is a real exam question. The population of the United Kingdom is 66.65 million. Diabetes affects 6.0 per cent of them. Calculate the number of people with diabetes.
 
-00:01:53.000 --> 00:02:11.112
+00:01:56.700 --> 00:02:14.812
 The total is 66.65 million, and the percentage is 6.0. The answer line says million, so keep working in millions. First, find 1 per cent: 66.65 divided by 100 is 0.6665 million.
 
-00:02:11.700 --> 00:02:19.892
+00:02:15.400 --> 00:02:23.592
 Then multiply by 6. 0.6665 times 6 is 3.999 million.
 
-00:02:20.450 --> 00:02:28.322
+00:02:24.150 --> 00:02:32.671
 Round sensibly: about 4.0 million people. This answer is by olevels.com, not an official mark scheme.
 
-00:02:29.450 --> 00:02:41.567
-A common mistake is dividing the total by the percentage. 66.65 divided by 6 is about 11. That is far too big, since 6 per cent is a small part.
+00:02:33.800 --> 00:02:47.335
+Common mistake. A common mistake is dividing the total by the percentage. 66.65 divided by 6 is about 11. That is far too big, since 6 per cent is a small part.
 
-00:02:42.150 --> 00:03:01.926
+00:02:47.900 --> 00:03:07.856
 Other mistakes: giving the size of a fall, not the new value. A 30 per cent fall from 4600 is 1380, but the new value is 4600 minus 1380, which is 3220. Also check you use the right total.
 
-00:03:03.050 --> 00:03:19.306
+00:03:09.000 --> 00:03:25.516
 Your turn. These are made-up figures. A town has 24 000 adults. 15 per cent of them smoke. How many adults smoke? Next year, the number of smokers falls by 10 per cent. How many smoke then? Pause here and work it out.
 
-00:03:20.450 --> 00:03:30.242
-Part a. 15 per cent is 0.15. 24 000 times 0.15 is 3600 adults.
+00:03:26.650 --> 00:03:37.276
+Answer. Part a. 15 per cent is 0.15. 24 000 times 0.15 is 3600 adults.
 
-00:03:30.800 --> 00:03:52.027
+00:03:37.850 --> 00:03:59.247
 Part b. A fall of 10 per cent means multiply by 0.90. 3600 times 0.90 is 3240 smokers. Check: the fall is 360, and 3600 minus 360 is 3240.
 
-00:03:52.600 --> 00:04:05.677
+00:03:59.800 --> 00:04:13.227
 So, every time: find the total and the percentage. Turn the percentage into a decimal. Multiply. For a rise or fall, use 1 plus or minus the decimal. Keep units, and round at the end.

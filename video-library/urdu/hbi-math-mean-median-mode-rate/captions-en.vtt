@@ -1,0 +1,52 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:18.218
+An average is one number that stands for a whole set of values. The mean is the most common average. Add up the values, then divide by how many there are. Here, 4, 6 and 8 add up to 18. 18 divided by 3 is 6.
+
+00:00:19.350 --> 00:00:34.234
+Step one, the mean. A student repeats a reading four times: 12, 15, 14 and 13. The total is 54. There are 4 values, so the mean is 54 divided by 4, which is 13.5.
+
+00:00:34.800 --> 00:00:50.995
+The median is the middle value when the values are in order. First, put them in order: 7, 3, 9, 5, 4 becomes 3, 4, 5, 7, 9. The middle one is 5. With an even number of values, take the mean of the two middle ones.
+
+00:00:51.550 --> 00:01:02.920
+The mode is the value that appears most often. In 2, 3, 3, 5, 3, 6, the value 3 appears three times. So the mode is 3. It is not the highest value.
+
+00:01:03.500 --> 00:01:16.734
+A mean rate of change is the change, divided by the time taken. Water warms from 20 to 50 degrees Celsius in 5 minutes. The change is 30. 30 divided by 5 is 6 degrees Celsius per minute.
+
+00:01:17.300 --> 00:01:30.097
+Watch for an anomalous result: one that does not fit the pattern. In 12, 13, 31 and 14, the 31 is anomalous. Leave it out of the mean, unless the question tells you to use every value.
+
+00:01:31.200 --> 00:01:46.776
+Here is a real exam question. A teacher measures the heights of students. In each age group there are two males and two females. Calculate the mean height of the students aged 16, to one decimal place.
+
+00:01:47.350 --> 00:02:07.220
+Here is the table. Each age group has two male heights and two female heights, then a mean. At age 12 the mean is 145.5. At age 14 it is 164.5. At age 18 it is 176.9. The mean for age 16 is the empty box.
+
+00:02:07.800 --> 00:02:22.261
+Find the row for age 16. There are four heights: 175.9 and 178.5 for the males, and 166.3 and 167.6 for the females. So there are 4 values.
+
+00:02:22.850 --> 00:02:37.954
+Add them: 175.9 plus 178.5 plus 166.3 plus 167.6 is 688.3. Then divide by 4. 688.3 divided by 4 is 172.075.
+
+00:02:38.550 --> 00:02:48.971
+To one decimal place, 172.075 rounds to 172.1 centimetres. Explanation by olevels.com, not an official mark scheme.
+
+00:02:50.100 --> 00:02:58.682
+A common mistake is dividing by the wrong number, like 2 instead of 4. Count every value you added.
+
+00:02:59.250 --> 00:03:09.057
+Another mistake is rounding the wrong way. The question asks for one decimal place, so 172 is not enough. Write 172.1.
+
+00:03:10.200 --> 00:03:25.256
+Your turn. A child's mass rises from 12.4 kilograms to 14.8 kilograms over 6 months. Calculate the mean rate of increase in mass, in kilograms per month. Pause here and work it out.
+
+00:03:26.400 --> 00:03:36.967
+First, the change. 14.8 minus 12.4 is 2.4 kilograms. The time taken is 6 months.
+
+00:03:37.550 --> 00:03:47.446
+Then divide the change by the time. 2.4 divided by 6 is 0.4. So the mean rate is 0.4 kilograms per month.
+
+00:03:48.000 --> 00:03:58.989
+So, every time: mean, add up and divide by how many. Median, put in order and take the middle. Mode, the most common. Rate, the change divided by the time.

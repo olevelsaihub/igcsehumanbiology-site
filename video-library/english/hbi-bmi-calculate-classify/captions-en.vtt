@@ -1,49 +1,49 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:12.693
-BMI means body mass index. It uses your body mass and your height to judge if your body mass is healthy. To find it, divide the body mass in kilograms by the height in metres, squared.
+00:00:00.000 --> 00:00:13.431
+Idea. BMI means body mass index. It uses your body mass and your height to judge if your body mass is healthy. To find it, divide the body mass in kilograms by the height in metres, squared.
 
-00:00:13.250 --> 00:00:34.989
+00:00:14.000 --> 00:00:36.029
 Then you place the BMI in a band. Under 18.5 is underweight. 18.5 to 24.9 is healthy. 25 to 29.9 is overweight. 30 to 39.9 is obese, and 40 or more is morbidly obese. Always use the table in the paper, because tables can differ.
 
-00:00:36.100 --> 00:00:46.532
-Step one: the height must be in metres. If it is in centimetres, divide by 100. So 169 centimetres is 1.69 metres.
+00:00:37.150 --> 00:00:48.551
+Method. Step one: the height must be in metres. If it is in centimetres, divide by 100. So 169 centimetres is 1.69 metres.
 
-00:00:47.300 --> 00:01:01.337
+00:00:49.300 --> 00:01:03.397
 Step two: square the height. Squared means height times height, like the area of a square. So 1.69 times 1.69 is 2.8561. It is not 1.69 times 2.
 
-00:01:01.900 --> 00:01:20.460
+00:01:03.950 --> 00:01:22.680
 Step three, for an example person of 65 kilograms: divide the mass by the squared height. 65 divided by 2.8561 is 22.758. Step four: round to one decimal place, 22.8. BMI needs no unit.
 
-00:01:21.050 --> 00:01:34.362
+00:01:23.250 --> 00:01:36.742
 Step five: find the band. 22.8 is between 18.5 and 24.9, so it is a healthy weight. A value of exactly 30.0 is obese, not overweight.
 
-00:01:34.950 --> 00:01:46.342
+00:01:37.300 --> 00:01:48.892
 Another measure is the waist-to-hip ratio: the waist measurement divided by the hip measurement. You compare it with a chart. For BMI, 30 or more means obese, or worse.
 
-00:01:47.450 --> 00:02:01.615
-Now a real exam question. The table gives the BMI bands. Calculate the BMI of a person with a body mass of 120 kilograms and a height of 1.95 metres. Two marks.
+00:01:50.000 --> 00:02:05.550
+Worked example. Now a real exam question. The table gives the BMI bands. Calculate the BMI of a person with a body mass of 120 kilograms and a height of 1.95 metres. Two marks.
 
-00:02:02.200 --> 00:02:22.829
+00:02:06.100 --> 00:02:26.729
 Both values are in the right units. Square the height: 1.95 times 1.95 is 3.8025. Now divide: 120 divided by 3.8025 is 31.558. To one decimal place, the BMI is 31.6.
 
-00:02:23.400 --> 00:02:33.277
+00:02:27.300 --> 00:02:37.347
 Do a sense check. 31.6 is in the band 30.0 to 39.9, so this person is obese. That fits a heavy person.
 
-00:02:33.850 --> 00:02:39.375
+00:02:37.900 --> 00:02:44.140
 Here is the full answer. This answer is by olevels.com, not an official mark scheme.
 
-00:02:40.500 --> 00:02:52.297
-The most common mistake is dividing by the height times two. 1.95 times 2 is 3.9. That gives 30.8, which is wrong. Square the height instead.
+00:02:45.250 --> 00:02:58.697
+Common mistake. The most common mistake is dividing by the height times two. 1.95 times 2 is 3.9. That gives 30.8, which is wrong. Square the height instead.
 
-00:02:52.850 --> 00:03:01.661
+00:02:59.250 --> 00:03:08.241
 Do not use the height in centimetres. That gives a tiny number. And do not divide the height by the mass. The mass always goes on top.
 
-00:03:02.800 --> 00:03:18.971
+00:03:09.350 --> 00:03:25.691
 Your turn. A woman has a body mass of 52 kilograms and a height of 165 centimetres. Part a: calculate her BMI, to one decimal place. Part b: use the bands to give her category. Pause here and work it out.
 
-00:03:20.100 --> 00:03:44.079
-Here is the answer. 165 centimetres is 1.65 metres. Square it: 1.65 times 1.65 is 2.7225. Then 52 divided by 2.7225 is 19.1. Part b: 19.1 is between 18.5 and 24.9, so she is a healthy weight.
+00:03:26.800 --> 00:03:51.591
+Answer. Here is the answer. 165 centimetres is 1.65 metres. Square it: 1.65 times 1.65 is 2.7225. Then 52 divided by 2.7225 is 19.1. Part b: 19.1 is between 18.5 and 24.9, so she is a healthy weight.
 
-00:03:44.650 --> 00:03:54.527
+00:03:52.150 --> 00:04:02.297
 So, every time: height in metres. Square the height. Divide the mass by it, and round to one decimal place. Then find the band in the table given.

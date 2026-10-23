@@ -1,52 +1,52 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:15.488
-Breathing rate is the number of breaths in one minute. A trace is the line drawn by a machine that records your breathing. One full breath goes from one peak to the next. So count the peaks. This made-up trace shows five peaks in twenty seconds.
+00:00:00.000 --> 00:00:16.392
+Idea. Breathing rate is the number of breaths in one minute. A trace is the line drawn by a machine that records your breathing. One full breath goes from one peak to the next. So count the peaks. This made-up trace shows five peaks in twenty seconds.
 
-00:00:16.050 --> 00:00:28.530
+00:00:16.950 --> 00:00:29.620
 A minute is sixty seconds: three lots of twenty seconds. So multiply by three: fifteen breaths per minute. A resting person breathes about twelve to twenty times a minute, so fifteen makes sense.
 
-00:00:29.650 --> 00:00:46.482
-Step one: the volume of air breathed per minute is the tidal volume times the breathing rate. Tidal volume is the air in one normal breath. For example, 500 cubic centimetres times 12 breaths is 6000 cubic centimetres per minute.
+00:00:30.750 --> 00:00:48.433
+Method. Step one: the volume of air breathed per minute is the tidal volume times the breathing rate. Tidal volume is the air in one normal breath. For example, 500 cubic centimetres times 12 breaths is 6000 cubic centimetres per minute.
 
-00:00:47.050 --> 00:01:04.501
+00:00:49.000 --> 00:01:06.501
 Step two: check the unit on the answer line. One cubic decimetre is a thousand cubic centimetres. To change cubic centimetres to cubic decimetres, divide by a thousand. So 19 200 cubic centimetres is 19.2 cubic decimetres.
 
-00:01:05.100 --> 00:01:26.476
+00:01:07.100 --> 00:01:28.646
 Step three: do one percentage at a time. To find a percentage, multiply by it and divide by a hundred. Say air is 20 per cent oxygen: 20 per cent of 6000 is 1200. If the body uses 25 per cent of that oxygen, 25 per cent of 1200 is 300.
 
-00:01:27.050 --> 00:01:42.090
+00:01:29.200 --> 00:01:44.240
 Step four, for a trace: read the scale first. Here four squares make one cubic decimetre. To find the volume between two levels, count the squares between them: six. Then divide by four: 1.5 cubic decimetres.
 
-00:01:43.200 --> 00:02:07.477
-Now a real exam question. The table shows a person's tidal volume and breathing rate, in air with different percentages of carbon dioxide. Part three says the air is 20 per cent oxygen, and the body uses 20 per cent of this oxygen. Calculate the oxygen used per minute in air with 1.60 per cent carbon dioxide. Three marks.
+00:01:45.350 --> 00:02:08.718
+Worked example. The table shows a person's tidal volume and breathing rate, in air with different percentages of carbon dioxide. Part three says the air is 20 per cent oxygen, and the body uses 20 per cent of this oxygen. Calculate the oxygen used per minute in air with 1.60 per cent carbon dioxide. Three marks.
 
-00:02:08.050 --> 00:02:23.666
+00:02:09.300 --> 00:02:25.196
 First, find the 1.60 per cent column. The tidal volume is 700, and the rate is 15 breaths per minute. So the air breathed per minute is 700 times 15, which is 10 500 cubic centimetres.
 
-00:02:24.250 --> 00:02:38.693
+00:02:25.750 --> 00:02:40.383
 Next, the oxygen in that air. 20 per cent of 10 500 is 10 500 times 20, divided by 100. That is 2100 cubic centimetres of oxygen breathed in each minute.
 
-00:02:39.250 --> 00:02:52.946
+00:02:40.950 --> 00:02:54.826
 Then the body uses 20 per cent of this oxygen. 2100 times 20, divided by 100, is 420. The answer line is in cubic centimetres, so no change is needed.
 
-00:02:53.500 --> 00:03:00.327
-Here is the full working, one step per line. This answer is by olevels.com, not an official mark scheme.
+00:02:55.400 --> 00:03:01.512
+Here is the full working. This answer is by olevels.com, not an official mark scheme.
 
-00:03:01.450 --> 00:03:12.181
-A common mistake is to count peaks and troughs as breaths. That doubles the rate. Another is to forget to scale a count up to one minute: thirty seconds must be doubled.
+00:03:02.650 --> 00:03:14.819
+Common mistake. A common mistake is counting peaks and troughs as breaths, which doubles the rate. Another is to forget to scale a count up to one minute: thirty seconds must be doubled.
 
-00:03:12.750 --> 00:03:24.739
+00:03:15.400 --> 00:03:27.569
 Another mistake is to add the percentages: 20 per cent of 20 per cent is not 40 per cent. Do one at a time. And give cubic decimetres when the answer line asks for them.
 
-00:03:25.850 --> 00:03:49.082
+00:03:28.700 --> 00:03:52.202
 Your turn. After a race, a swimmer takes 15 breaths in 30 seconds. Her tidal volume is 1500 cubic centimetres. Air is 20 per cent oxygen, and she uses 30 per cent of the oxygen she breathes in. Find her breathing rate, the air she breathes per minute in cubic decimetres, and the oxygen she uses. Pause here and work it out.
 
-00:03:50.200 --> 00:04:05.645
-Thirty seconds is half a minute, so double it: 30 breaths per minute. Then 1500 times 30 is 45 000 cubic centimetres per minute. Divide by a thousand: 45 cubic decimetres.
+00:03:53.350 --> 00:04:09.561
+Answer. Thirty seconds is half a minute, so double it: 30 breaths per minute. Then 1500 times 30 is 45 000 cubic centimetres per minute. Divide by a thousand: 45 cubic decimetres.
 
-00:04:06.200 --> 00:04:20.109
+00:04:10.150 --> 00:04:24.059
 For part c, 20 per cent of 45 is 9 cubic decimetres of oxygen. She uses 30 per cent of that: 9 times 30, divided by 100, is 2.7 cubic decimetres per minute.
 
-00:04:20.700 --> 00:04:29.532
+00:04:24.650 --> 00:04:33.752
 So, every time: read the scale or the right column, write one step per line, take one percentage at a time, and check the unit at the end.

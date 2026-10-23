@@ -1,5 +1,5 @@
 (()=>{'use strict';
-if(!document.querySelector('link[data-release-style]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/igcsehumanbiology/assets/releases.css?v=8798325891';style.setAttribute('data-release-style','');document.head.append(style);}
+if(!document.querySelector('link[data-release-style]')){const style=document.createElement('link');style.rel='stylesheet';style.href='/igcsehumanbiology/assets/releases.css?v=778832337e';style.setAttribute('data-release-style','');document.head.append(style);}
 const base='/igcsehumanbiology/teach-me/api.php';
 const adminRoot=document.querySelector('[data-release-admin]');
 const header=document.querySelector('.ol-bar');

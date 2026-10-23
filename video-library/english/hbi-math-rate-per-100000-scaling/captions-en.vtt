@@ -1,49 +1,49 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:21.355
-Disease data are often given as a rate per 100,000 people. A rate per 100,000 tells you how many cases there are in every 100,000 people. Here, a made-up rate of five per 100,000 means five cases in every 100,000 people. A case is one person with the disease.
+00:00:00.000 --> 00:00:22.259
+Idea. Disease data are often given as a rate per 100,000 people. A rate per 100,000 tells you how many cases there are in every 100,000 people. Here, a made-up rate of five per 100,000 means five cases in every 100,000 people. A case is one person with the disease.
 
-00:00:21.950 --> 00:00:38.398
+00:00:22.850 --> 00:00:39.488
 So for a bigger population, count the groups of 100,000. A population of 300,000 is three groups. With 50 cases in each group, that is 3 times 50, which is 150 cases. These are made-up numbers.
 
-00:00:39.500 --> 00:00:59.255
-Here is the method. Step one: read the rate for the right group and year. Step two: write the population as a full number. Step three: divide the population by 100,000 to get the number of groups. Step four: multiply by the rate. Step five: round as asked, and check it is sensible.
+00:00:40.600 --> 00:01:01.211
+Method. Here is the method. Step one: read the rate for the right group and year. Step two: write the population as a full number. Step three: divide the population by 100,000 to get the number of groups. Step four: multiply by the rate. Step five: round as asked, and check it is sensible.
 
-00:00:59.850 --> 00:01:11.669
+00:01:01.800 --> 00:01:13.809
 Write millions in full. One million is 1,000,000. 60 million is 60,000,000. 2.5 million is 2,500,000. A million has six zeros.
 
-00:01:12.250 --> 00:01:25.434
+00:01:14.400 --> 00:01:27.854
 On a graph, use a ruler. Here is a made-up graph. Find the right line, males or females, go up from the year, then across to read the rate. For males in 2016 it is 240.
 
-00:01:26.100 --> 00:01:43.849
+00:01:28.500 --> 00:01:46.439
 Some data use a different base, such as per 1000. Then divide the population by 1000 instead. For example, a made-up rate of 8 per 1000 in a population of 50,000 gives 50 groups, so 50 times 8 is 400 people.
 
-00:01:44.400 --> 00:02:00.827
+00:01:47.000 --> 00:02:03.617
 Check your answer. The cases must be only a small part of the whole population. And round as asked. To 3 significant figures means keep three digits that matter, so 22,250 becomes 22,300.
 
-00:02:01.950 --> 00:02:23.091
-Now a real exam question. Coronary heart disease is a disease of the arteries that supply the heart muscle. The graph shows deaths from it per 100,000 people, for males and females. The population was 60 million in 2006. Calculate the number of men who died in 2006. Three marks.
+00:02:04.750 --> 00:02:27.168
+Worked example. Now a real exam question. Coronary heart disease is a disease of the arteries that supply the heart muscle. The graph shows deaths from it per 100,000 people, for males and females. The population was 60 million in 2006. Calculate the number of men who died in 2006. Three marks.
 
-00:02:23.650 --> 00:02:43.234
+00:02:27.750 --> 00:02:47.584
 The question is about men, so use the males line, not the females line. In the exam key, males is the solid line with diamonds. Use a ruler on the graph. Go up from 2006 and across. The point is just under 640, so read 640 deaths per 100,000.
 
-00:02:43.800 --> 00:02:56.813
+00:02:48.150 --> 00:03:01.353
 Write 60 million as a full number: 60,000,000. Divide by 100,000 to get 600 groups. Then 600 times 640 is 384,000 men.
 
-00:02:57.400 --> 00:03:16.664
+00:03:01.950 --> 00:03:21.565
 The rate is 640. Divide 60,000,000 by 100,000 to get 600. 600 times 640 is 384,000. So the answer is 384,000 men. This answer is by olevels.com, not an official mark scheme.
 
-00:03:17.800 --> 00:03:29.555
-A common mistake is to read the females line instead of the males line. Another is to multiply the rate by the whole population without dividing by 100,000 first.
+00:03:22.700 --> 00:03:35.861
+Common mistake. A common mistake is to read the females line instead of the males line. Another is to multiply the rate by the whole population without dividing by 100,000 first.
 
-00:03:30.150 --> 00:03:39.089
+00:03:36.450 --> 00:03:45.579
 Another mistake is to write 60 million as 6,000,000. That has one zero too few. And give the number of significant figures asked for.
 
-00:03:40.200 --> 00:04:04.221
+00:03:46.700 --> 00:04:11.031
 Your turn. These numbers are made up. Tuberculosis, or TB, is a lung infection caused by bacteria. In one year a country had 45 new TB cases per 100,000 males and 30 per 100,000 females. There are 8 million males and 7.5 million females. Calculate the total number of new TB cases. Pause here and work it out.
 
-00:04:05.350 --> 00:04:27.963
-For the males, 8,000,000 divided by 100,000 is 80 groups, and 80 times 45 is 3600. For the females, 7,500,000 divided by 100,000 is 75, and 75 times 30 is 2250. Now add them: 5850.
+00:04:12.150 --> 00:04:35.616
+Answer. For the males, 8,000,000 divided by 100,000 is 80 groups, and 80 times 45 is 3600. For the females, 7,500,000 divided by 100,000 is 75, and 75 times 30 is 2250. Now add them: 5850.
 
-00:04:28.550 --> 00:04:39.814
+00:04:36.200 --> 00:04:47.654
 So the males give 3600 cases and the females give 2250 cases. The total is 5850 new TB cases.
