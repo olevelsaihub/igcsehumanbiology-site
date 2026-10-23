@@ -287,6 +287,9 @@ async function loadWorkspaceType(workspace, link) {
     const lesson = documentCopy.querySelector('[data-type-lesson]');
     if (!lesson) throw new Error('Lesson content was not found.');
     panel.replaceChildren(document.importNode(lesson, true));
+    { const r = documentCopy.getElementById('olv-rules');   // kept with the lesson for olv-marking-adapter.js
+      if (r) { const s = document.createElement('script'); s.type = 'application/json'; s.dataset.olvRules = '';
+               s.textContent = r.textContent; panel.append(s); } }
     panel.scrollTop = 0;
     updateLearningProgress();
     const place = readLearningPlaces()[planPath()];

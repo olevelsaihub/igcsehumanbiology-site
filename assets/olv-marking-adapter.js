@@ -35,6 +35,18 @@
     try { rulesCache = JSON.parse(document.getElementById('olv-rules')?.textContent || '{}'); } catch { rulesCache = {}; }
     return rulesCache;
   }
+  // Rules of a page whose lesson was loaded into this one: the plan and type workspaces (bank.js) keep the fetched
+  // page's rules beside the lesson as <script type="application/json" data-olv-rules>. Read when a part has no rule.
+  function addRules(text) {
+    if (!text) return;
+    try { Object.assign(rules(), JSON.parse(text)); } catch { /* leave the rules as they were */ }
+  }
+  function adoptRules() {
+    for (const s of document.querySelectorAll('script[data-olv-rules]:not([data-olv-adopted])')) {
+      s.dataset.olvAdopted = '';
+      addRules(s.textContent);
+    }
+  }
   function numbers(text, fractions) {
     const out = [];
     const re = /[-\u2212\u2013]?\d{1,3}(?:[ ,\u2009\u202F\u00A0]\d{3})+(?!\d)(?:\.\d+)?|[-\u2212\u2013]?\d+(?:\.\d+)?/gu;
@@ -176,6 +188,7 @@
   }
 
   function local(root, answer) {
+    if (!rules()[root.dataset.partId]) adoptRules();
     const rule = rules()[root.dataset.partId];
     if (!rule) return null;
     const reply = check(rule, answer);
@@ -254,5 +267,5 @@
   });
 
   const unavailable = 'Your answer is saved on this device. Automatic checking is not available right now, so compare your answer with the method and the worked example for this question type.';
-  window.OlvMarkingAdapter = { result, unavailable, local, check };
+  window.OlvMarkingAdapter = { result, unavailable, local, check, addRules };
 })();
